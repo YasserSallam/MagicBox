@@ -11,10 +11,10 @@ void gotoxy(int,int);		//function to set cursor position
 int main()
 {
 	int counter=1,
-    matrixDimension,                      // dimension of matrix
-    row=1,column= 10;       //start position for cursor
-    cout<<"please enter matrix dimension \t ";
-    cin>>matrixDimension;
+	matrixDimension,                      // dimension of matrix
+	row=1,column= 10;       //start position for cursor
+	cout<<"please enter matrix dimension \t ";
+	cin>>matrixDimension;
 	int numberOfRowLeftAndRight=matrixDimension/2;            //number of columns right and left center column
 	for(counter=1;counter<=(matrixDimension*matrixDimension);counter++){
 		gotoxy(row,column);                     //go to center column and put first number
@@ -23,7 +23,7 @@ int main()
 			row++;
 			if(row > matrixDimension)
 				row = 1;
-             }
+		}
 		else {
             row--;
 			if(row < 1 )
